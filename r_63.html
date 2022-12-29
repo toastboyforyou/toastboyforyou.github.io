@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brick and unbrick bookmarks</title>
+    <script>
+      function openWindow(url){
+        window.open(url,"_blank", 'PopUp'+Math.floor((Math.random()*100)+1)+'menubar=no,status=no,toolbar=noresizable=no,width=500,height=500,titlebar=no,alwaysRaised=yes');
+      }
+      function brick() {
+        if (confirm("Are you sure you want to brick this bookmark?")) {
+          openWindow("https://toastboyforyou.github.io/index2.html");
+          location.assign('https://tinyurl.com/3t2cfyut');
+        }
+
+      }
+      function unbrick() {
+        if (confirm("Are you sure you want to unbrick this bookmark?")) {
+          openWindow("https://toastboyforyou.github.io/index2.html");
+          location.assign('https://tinyurl.com/3t2cfyut');
+        }
+      }
+    </script>
+  </head>
+  <body>
+     <h1>Brick and Unbrick bookmarks</h1>
+     <p>yay, unbrick your bookmarks</p>
+
+     <h2>UNBRICK BOOKMARKS</h2>
+     <br>
+     <label for="ubo">Choose a bookmark ID:</label>
+      <select name="ubo" id="ubo">
+        <option value="kotamicheal">Kotas & Micheals</option>
+        <option value="nick">Nick</option>
+        <option value="ben">Ben</option>
+        <option value="blake">Blake</option>
+      </select>
+     <button type="button" name="ub1" onclick="unbrick()">Unbrick Bookmark</button>
+     <br>
+     <h2>BRICK BOOKMARKS</h2>
+     <br>
+     <label for="ubo">Choose a bookmark ID:</label>
+      <select name="ubo" id="ubo">
+        <option value="kotamicheal">Kotas & Micheals</option>
+        <option value="nick">Nick</option>
+        <option value="ben">Ben</option>
+        <option value="blake">Blake</option>
+      </select>
+     <button type="button" name="ub1" onclick="brick()">Brick Bookmark</button>
+  </body>
+</html>
